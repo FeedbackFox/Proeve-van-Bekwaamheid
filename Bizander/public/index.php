@@ -48,7 +48,7 @@ $router->setBasePath('/Bizander/public');
  * We vertellen de router welke url naar welk stukje code (de controller) moet worden doorgestuuurd.
  */
 
-$router->map( 'GET', '/', 'Controller#homepage', 'Home-page' );
+$router->map( 'GET', '/', 'HomeController#homepage', 'Home-page' );
 $router->map( 'GET', '/', 'Controller#', '');
 $router->map( 'GET', '/', 'Controller#', '' );
 $router->map( 'GET', '/', 'Controller#', '' );
