@@ -111,7 +111,8 @@ body {
 
 /* Opened Navigation */
 
-.topnav.open {
+.topnav.open,
+.topnav.over.open {
     height: 100vh;
 }
 
@@ -139,7 +140,8 @@ body {
 
 /* Opens the menu with animation */
 
-.topnav.open #menu {
+.topnav.open #menu,
+.topnav.open #menu.over {
     position: absolute;
     width: 100vw;
     margin: -100px 0 0 -375px;
@@ -153,11 +155,13 @@ body {
     z-index: 2;
 }
 
-.topnav #menu .links.open {
+.topnav #menu .links.open,
+.topnav #menu.over .links.open {
     padding-top: 250px;
 }
 
-.topnav #menu .links.open a {
+.topnav #menu .links.open a,
+.topnav #menu.over .links.open a {
     display: block;
     float: none;
     text-align: left;
@@ -166,8 +170,14 @@ body {
 
 /* Gets the socials on the same px as the text */
 
-.topnav #menu .socials {
+.topnav #menu .socials,
+.topnav #menu.over .socials {
     margin-left: 40px;
+}
+
+.topnav #menu .socials.right,
+.topnav #menu.over .socials.right {
+    margin-right: 100px;
 }
 
 
@@ -237,6 +247,17 @@ body {
 }
 
 
+/* Over-page Styling */
+
+img.desktop.image {
+    display: none;
+}
+
+img.mobiel.image {
+    display: block;
+}
+
+
 /* Desktop view */
 
 @media only screen and (min-width: 1200px) {
@@ -257,15 +278,27 @@ body {
     header {
         width: 40%;
     }
+    header.overpage {
+        position: fixed;
+        width: 100vw;
+        height: 10vh;
+        z-index: 2;
+    }
     .topnav {
         width: 100%;
         height: 100vh;
     }
-    .topnav #menu {
+    .topnav.over {
+        width: 100vw;
+        height: 10vh;
+    }
+    .topnav #menu,
+    .topnav #menu.over {
         position: absolute;
         margin: -100px 0 0 -600px;
     }
-    .topnav.open #menu {
+    .topnav.open #menu,
+    .topnav.over.open #menu.over {
         position: absolute;
         width: 25%;
         margin: -100px 0 0 -125px;
@@ -277,6 +310,9 @@ body {
         transform: translate(100%, 0);
         transition: transform 0.5s cubic-bezier(0.77, 0.2, 0.05, 1.0);
         z-index: 0;
+    }
+    .topnav.over.open #menu.over {
+        margin: -100px 0 0 -405px;
     }
     /* Replacing the logo */
     .topnav a.logo {
@@ -293,6 +329,11 @@ body {
         margin: 650px 0 0 115px;
         height: 110px;
         width: 520px;
+    }
+    .topnav .homepage-logo_klein a.logo-desktop img {
+        margin: 650px 0 0 70px;
+        height: 70px;
+        width: 400px;
     }
     /* Positioning the Hamburger */
     .topnav a.icon {
@@ -329,8 +370,13 @@ body {
         transform: translate(-15px, 8px);
     }
     /* Replacing the social  */
-    .topnav #menu .socials {
+    .topnav #menu .socials,
+    .topnav #menu.over .socials {
         display: none;
+    }
+    .topnav .socials.right {
+        z-index: 2;
+        margin: 25px 0 0 1550px;
     }
     .topnav .socials {
         display: block;
@@ -341,6 +387,36 @@ body {
         height: 100vh;
     }
     .wrapper .homepage-cover {
+        display: block;
+    }
+    /* Over-page Styling */
+    div.over-wrapper {
+        display: flex;
+        flex-direction: row;
+        width: 400vw;
+        transform: rotate(90deg) translateY(-100vh);
+        transform-origin: top left;
+    }
+    div.outer-wrapper {
+        width: 100vw;
+        height: 200vh;
+        transform: rotate(-90deg) translateX(-100vh);
+        transform-origin: top left;
+        overflow-y: scroll;
+        overflow-x: hidden;
+        position: absolute;
+        scrollbar-width: none;
+        -ms-overflow-style: none;
+    }
+     ::-webkit-scrollbar {
+        display: none;
+    }
+    div.image-desktop {
+        margin-top: 200px;
+        margin-left: 125px;
+        width: 400vw;
+    }
+    img.desktop.image {
         display: block;
     }
 }

@@ -13,12 +13,12 @@
     <div class="wrapper">
         <header>
             <div class="topnav">
-                <a href="#home" class="logo"><img src="image/Logo_Bizander_Witlinks.svg" alt="Logo"></a>
+                <a href="" class="logo"><img src="image/Logo_Bizander_Witlinks.svg" alt="Logo"></a>
                     <div id="menu">
                         <ul class="links">
-                            <a href="#home"><li>Home</li></a>
+                            <a href=""><li>Home</li></a>
                             <a href="#portfolio"><li>Portfolio</li></a>
-                            <a href="#over"><li>Over</li></a>
+                            <a href="over"><li>Over</li></a>
                             <a href="#contact"><li>Contact</li></a>
                         </ul>
                         <div class="socials">

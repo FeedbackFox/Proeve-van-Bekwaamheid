@@ -49,7 +49,7 @@ $router->setBasePath('/Bizander/public');
  */
 
 $router->map( 'GET', '/', 'HomeController#homepage', 'Home-page' );
-$router->map( 'GET', '/', 'Controller#', '');
+$router->map( 'GET', '/over', 'OverController#overpage', 'Over-page');
 $router->map( 'GET', '/', 'Controller#', '' );
 $router->map( 'GET', '/', 'Controller#', '' );
 
