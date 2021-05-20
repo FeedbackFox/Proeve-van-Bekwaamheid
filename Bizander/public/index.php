@@ -41,7 +41,7 @@ require '../private/includes/init.php';
 $router = new AltoRouter();
 
 //Als jouw public folder niet te zien is als je naar http://localhoist gaat stel dan het juiste basePath in (pas dit pad aan naar jouw situatie)
-$router->setBasePath('/Proeve-van-Bekwaamheid/Bizander/public');
+$router->setBasePath('/Bizander/public');
 
 /**
  * Hier stellen we de juiste "routes" in voor onze website

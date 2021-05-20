@@ -116,6 +116,10 @@ body {
     height: 100vh;
 }
 
+.topnav.contact.open {
+    height: 100vh;
+}
+
 .topnav.open a.logo {
     display: none;
 }
@@ -258,10 +262,72 @@ img.mobiel.image {
 }
 
 
+/* Contact-page Styling */
+
+.image-wrapper .homepage-cover .cover-image {
+    width: 100%;
+}
+
+.contact-wrapper h1,
+.contact-wrapper h2 {
+    color: #fff;
+    margin: auto 35px;
+}
+
+.contact-wrapper .form {
+    margin: 0 auto;
+}
+
+.contact-wrapper .address {
+    color: #fff;
+}
+
+.contact-wrapper .address ul li {
+    list-style-type: none;
+}
+
+.contact-wrapper .address ul li a {
+    text-decoration: none;
+}
+
+.contact-wrapper .form form input,
+.contact-wrapper .form form textarea {
+    display: block;
+    width: 80%;
+    padding: 15px;
+    margin: 15px auto;
+    background: #000;
+    color: #fff;
+    border: #fff solid 1px;
+}
+
+.contact-wrapper .form form input[type="button"] {
+    background: #fff;
+    color: #000;
+    font-weight: 600;
+}
+
+
+/* Product-page Styling */
+
+.wrapper.product {
+    display: flex;
+    flex-direction: column;
+}
+
+p {
+    color: #fff;
+}
+
+
 /* Desktop view */
 
 @media only screen and (min-width: 1200px) {
     /* Global css */
+    .content-space {
+        width: 100%;
+        margin-top: 150px;
+    }
     .wrapper {
         display: flex;
         /* Will contain if First div is longer than second div */
@@ -298,7 +364,8 @@ img.mobiel.image {
         margin: -100px 0 0 -600px;
     }
     .topnav.open #menu,
-    .topnav.over.open #menu.over {
+    .topnav.over.open #menu.over,
+    .topnav.contact.open #menu.contact {
         position: absolute;
         width: 25%;
         margin: -100px 0 0 -125px;
@@ -313,6 +380,9 @@ img.mobiel.image {
     }
     .topnav.over.open #menu.over {
         margin: -100px 0 0 -405px;
+    }
+    .topnav.contact.open #menu.contact {
+        margin: -100px 0 0 -145px;
     }
     /* Replacing the logo */
     .topnav a.logo {
@@ -418,5 +488,49 @@ img.mobiel.image {
     }
     img.desktop.image {
         display: block;
+    }
+    /* Contact-page Styling */
+    .topnav.contact .socials {
+        display: block;
+        margin: 25px 0 0 600px;
+    }
+    .contactpage {
+        height: 10vh;
+        width: 100%;
+    }
+    .contact-wrapper h1,
+    .contact-wrapper h2 {
+        color: #fff;
+        margin: auto 0px;
+    }
+    .topnav.contact {
+        height: 10vh;
+        width: 45vw;
+    }
+    .contact-wrapper .form form input,
+    .contact-wrapper .form form textarea {
+        margin: 15px 0;
+    }
+    .contact-wrapper div {
+        padding-left: 120px;
+    }
+    .contact-wrapper .address {
+        width: 35%;
+        float: left;
+        font-size: 16px;
+    }
+    .contact-wrapper .address ul {
+        margin-left: -40px;
+    }
+    .contact-wrapper-header {
+        display: flex;
+        color: #fff;
+    }
+    .contact-wrapper-header div {
+        display: block;
+        width: 100%;
+    }
+    .topnav.contact.open {
+        width: 45vw;
     }
 }

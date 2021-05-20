@@ -12,7 +12,7 @@ class ProductController {
 
         require __DIR__ . "/../includes/functions.php";
         require __DIR__ . "/../models/models.php";
-        require __DIR__ . "/../views/header.php";
+        require __DIR__ . "/../views/header_4.php";
         require __DIR__ . "/../views/productpage.php";
         require __DIR__ . "/../views/footer.php";
 

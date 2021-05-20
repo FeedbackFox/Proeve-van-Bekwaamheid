@@ -10,7 +10,7 @@
     <title>Bizander</title>
 </head>
 <body>
-    <div class="wrapper">
+    <div class="wrapper product">
         <header class="overpage">
             <div class="topnav over">
                 <a href="" class="logo"><img src="image/Logo_Bizander_Witlinks.svg" alt="Logo"></a>

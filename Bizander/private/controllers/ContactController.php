@@ -12,7 +12,7 @@ class ContactController {
 
         require __DIR__ . "/../includes/functions.php";
         require __DIR__ . "/../models/models.php";
-        require __DIR__ . "/../views/header.php";
+        require __DIR__ . "/../views/header_3.php";
         require __DIR__ . "/../views/contactpage.php";
         require __DIR__ . "/../views/footer.php";
 
