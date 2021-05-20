@@ -17,9 +17,9 @@
                     <div id="menu">
                         <ul class="links">
                             <a href=""><li>Home</li></a>
-                            <a href="#portfolio"><li>Portfolio</li></a>
+                            <a href="product-overview"><li>Portfolio</li></a>
                             <a href="over"><li>Over</li></a>
-                            <a href="#contact"><li>Contact</li></a>
+                            <a href="contact"><li>Contact</li></a>
                         </ul>
                         <div class="socials">
                             <a href="https://facebook.com" target="_blank"><img src="https://via.placeholder.com/30x30" alt="Facebook link"></a>

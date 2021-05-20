@@ -2,7 +2,7 @@
 
 $config = [
     'DB_HOST' => 'localhost',
-    'DB_NAME' => 'thePantheons',
+    'DB_NAME' => 'bizander',
     'DB_USER' => 'root',
     'DB_PASSWORD' => '',
     'ROOT' => dirname(dirname(__DIR__)),
