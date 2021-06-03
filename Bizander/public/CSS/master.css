@@ -257,6 +257,7 @@ img.desktop.image {
 
 img.mobiel.image {
     display: block;
+    padding: 0 5px;
 }
 
 
@@ -334,6 +335,10 @@ p {
 
 img.img-responsive.image.tas-image {
     width: 100%;
+}
+
+.wrapper.product div.logo img.img-responsive.image.img-logo {
+    margin-top: 45px;
 }
 
 
@@ -453,6 +458,13 @@ img.img-responsive.image.tas-image {
     100% {
         margin-top: 0px;
     }
+}
+
+
+/* SVG styling */
+
+.socials img {
+    width: 30px;
 }
 
 

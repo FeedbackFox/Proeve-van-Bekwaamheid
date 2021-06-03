@@ -22,13 +22,13 @@
                             <a href="contact"><li>Contact</li></a>
                         </ul>
                         <div class="socials">
-                            <a href="https://facebook.com" target="_blank"><img src="https://via.placeholder.com/30x30" alt="Facebook link"></a>
-                            <a href="https://instagram.com" target="_blank"><img src="https://via.placeholder.com/30x30" alt="Instagram link"></a>
+                        <a href="https://www.facebook.com/bizander/" target="_blank"><img src="image/Facebook.svg" alt="Facebook link"></a>
+                            <a href="https://www.instagram.com/bizander.nl/" target="_blank"><img src="image/Instagram.svg" alt="Instagram link"></a>
                         </div>
                     </div>
                     <div class="socials right">
-                        <a href="https://facebook.com" target="_blank"><img src="https://via.placeholder.com/30x30" alt="Facebook link"></a>
-                        <a href="https://instagram.com" target="_blank"><img src="https://via.placeholder.com/30x30" alt="Instagram link"></a>
+                    <a href="https://www.facebook.com/bizander/" target="_blank"><img src="image/Facebook.svg" alt="Facebook link"></a>
+                            <a href="https://www.instagram.com/bizander.nl/" target="_blank"><img src="image/Instagram.svg" alt="Instagram link"></a>
                     </div>
                     <!-- <div class="homepage-logo_klein">
                         <a href="" class="logo-desktop"><img src="image/Logo_Bizander_Witlinks.svg" alt="Logo"></a>
