@@ -112,11 +112,9 @@ body {
 /* Opened Navigation */
 
 .topnav.open,
-.topnav.over.open {
-    height: 100vh;
-}
-
-.topnav.contact.open {
+.topnav.over.open,
+.topnav.contact.open,
+.topnav.pro.open {
     height: 100vh;
 }
 
@@ -310,13 +308,151 @@ img.mobiel.image {
 
 /* Product-page Styling */
 
-.wrapper.product {
+.input-wrapper {
     display: flex;
     flex-direction: column;
+    justify-content: left;
+    margin: 10px 25px 30px;
+}
+
+.subwrapper {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin: 0 25px;
 }
 
 p {
     color: #fff;
+}
+
+.product-tas {
+    width: 45%;
+    text-align: center;
+}
+
+img.img-responsive.image.tas-image {
+    width: 100%;
+}
+
+
+/* Single Product-page Styling */
+
+.subwrapper.shell {
+    justify-content: center;
+}
+
+.shell__pic {
+    width: 100%;
+}
+
+.shell__titel,
+.shell__desc--titel {
+    color: #fff;
+}
+
+#desc {
+    width: 100%;
+    padding: 5px 0;
+    transition: all .5s ease-in-out;
+}
+
+.desc__hideShow {
+    background: transparent;
+    border: none;
+    padding: 0;
+}
+
+.desc__hideShow span {
+    margin-left: 4em;
+}
+
+.shell__desc {
+    /* display: block; */
+    opacity: 1;
+    transition: all .5s ease-in-out;
+}
+
+.shell__desc.hide {
+    /* display: none; */
+    opacity: 0;
+}
+
+.input-wrapper.shell {
+    animation-name: wease;
+    animation-duration: .5s;
+    animation-iteration-count: 1;
+    animation-timing-function: ease;
+    animation-fill-mode: forwards;
+}
+
+.input-wrapper.shell.hide {
+    animation-name: ease;
+    animation-duration: .5s;
+    animation-iteration-count: 1;
+    animation-timing-function: ease;
+    animation-fill-mode: forwards;
+}
+
+@keyframes ease {
+    0% {
+        margin-top: 0;
+    }
+    12.5% {
+        margin-top: -15px;
+    }
+    25% {
+        margin-top: -30px;
+    }
+    37.5% {
+        margin-top: -45px;
+    }
+    50% {
+        margin-top: -60px;
+    }
+    62.5% {
+        margin-top: -75px;
+    }
+    75% {
+        margin-top: -90px;
+    }
+    87.5% {
+        margin-top: -105px;
+    }
+    100% {
+        margin-top: -120px;
+    }
+}
+
+@keyframes wease {
+    0% {
+        margin-top: -120px;
+    }
+    12.5% {
+        margin-top: -105px;
+    }
+    25% {
+        margin-top: -90px;
+    }
+    37.5% {
+        margin-top: -75px;
+    }
+    50% {
+        margin-top: -60px;
+    }
+    62.5% {
+        margin-top: -45px;
+    }
+    75% {
+        margin-top: -30px;
+    }
+    87.5% {
+        margin-top: -15px;
+    }
+    100% {
+        margin-top: 0px;
+    }
 }
 
 
@@ -365,7 +501,8 @@ p {
     }
     .topnav.open #menu,
     .topnav.over.open #menu.over,
-    .topnav.contact.open #menu.contact {
+    .topnav.contact.open #menu.contact,
+    .topnav.pro.open #menu.pro {
         position: absolute;
         width: 25%;
         margin: -100px 0 0 -125px;
@@ -383,6 +520,9 @@ p {
     }
     .topnav.contact.open #menu.contact {
         margin: -100px 0 0 -145px;
+    }
+    .topnav.pro.open #menu.pro {
+        margin: -100px 0 0 -170px;
     }
     /* Replacing the logo */
     .topnav a.logo {
@@ -532,5 +672,91 @@ p {
     }
     .topnav.contact.open {
         width: 45vw;
+    }
+    /* Product-overview page styling */
+    .product-wrapper {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+    }
+    .product-wrapper h1 {
+        color: #fff;
+    }
+    .subwrapper {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        width: 75%;
+        margin-left: 29em;
+    }
+    .subwrapper img.img-responsive.image.tas-image {
+        width: 50%;
+    }
+    .input-wrapper {
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+        margin: 105px 120px;
+        width: 15%;
+        position: fixed;
+        left: 0;
+    }
+    .input-wrapper .logo {
+        margin-top: 35em;
+    }
+    .product-tas {
+        width: 25%;
+    }
+    /* Single product page Styling */
+    .topnav.pro {
+        width: 50%;
+        float: right;
+        height: 10vh;
+    }
+    .topnav.pro .socials {
+        margin: 25px 0 0 625px;
+    }
+    .warpper.product-single {
+        height: 100vh;
+        overflow-y: hidden;
+    }
+    .wrapper.product-single .input-wrapper.shell {
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+        position: relative;
+    }
+    .shellwrapper {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        width: 50%;
+    }
+    .subwrapper.shell {
+        width: 75%;
+        margin-left: 0;
+        margin: 20px 0;
+    }
+    .shell__pic {
+        width: 50%;
+    }
+    .desc__hideShow span {
+        margin-left: 10em;
+    }
+    .shell__desc {
+        /* display: block; */
+        opacity: 1;
+        transition: all .5s ease-in-out;
+    }
+    .shell__desc.hide {
+        /* display: none; */
+        opacity: 0;
+    }
+    .input-wrapper.shell {
+        width: 75%;
+    }
+    .shell__desc--titel {
+        margin: 25px 0;
     }
 }

@@ -40,3 +40,16 @@ function carousel() {
     dots[slideIndex - 1].className += " slide-solid-dot";
     setTimeout(carousel, 5000);
 }
+
+// Hide and Show description of the Single Product
+function hideShow() {
+    var x = document.getElementById("desc");
+    var y = document.getElementById("input");
+    if (x.classList.contains("hide") || y.classList.contains("hide")) {
+        x.classList.remove("hide");
+        y.classList.remove("hide");
+    } else {
+        x.classList.add("hide");
+        y.classList.add("hide");
+    }
+}
