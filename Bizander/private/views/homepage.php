@@ -1,5 +1,7 @@
 <?php ?>
 <div class="slideshow-content">
+    <h1 class="mobile homepage-titel">Vind voor u de beste tas</h1>
+    <a href="product-overview" class="portfolio-link"><button class="portfolio-btn mobile">Portfolio</button></a>
   <img class="slide w3-animate-right" src="image/homepage-mobile.jpg">
   <img class="slide w3-animate-right" src="image/homepage-mobile2.jpg">
   <img class="slide w3-animate-right" src="image/homepage-mobile3.jpg">

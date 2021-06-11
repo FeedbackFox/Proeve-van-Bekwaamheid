@@ -20,7 +20,6 @@ class ProductController {
 
     function displayShell($shell){
         require __DIR__ . '/../models/productoverview.php';
-        require __DIR__ . '/../models/emailProduct.php';
         $project = shellProject($shell);
         include __DIR__ . '/../views/header_5.php';
         include __DIR__ . '/../views/shell.php';

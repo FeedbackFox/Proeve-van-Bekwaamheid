@@ -17,16 +17,26 @@
             </ul>
         </div>
         <div class="content-space"></div>
+        <?php 
+            if($message_sent):
+        ?>
+        <h3>Bedankt voor uw bericht, u zult snel antwoord krijgen.</h3>
+        <?php 
+            else:
+        ?>
         <div class="form">
             <h2>Neem contact op!</h2>
-            <form action="">
-                <input type="text" placeholder="Betreft">
-                <input type="text" placeholder="Naam">
-                <input type="text" placeholder="E-mail">
+            <form method="POST" name="contactForm" action="../private/models/emailForm.php">
+                <input type="text"  placeholder="Betreft" id="subject" name="subject">
+                <input type="text"  placeholder="Naam"    id="name"    name="name">
+                <input type="email" placeholder="E-mail"  id="email"   name="email">
                 <textarea name="Bericht" id="bericht" cols="30" rows="10" placeholder="Bericht"></textarea>
-                <input type="button" value="Verzenden">
+                <input type="submit" name="send" value="Verzenden" class="send-btn <?= $valid_class_name ?? ""?>" >
             </form>
         </div>
+        <?php
+            endif;
+        ?>
     </div>
 </div>
 <div class="image-wrapper">

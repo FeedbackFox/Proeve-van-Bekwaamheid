@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="/Bizander/public/css/master.css">
+    <link rel="stylesheet" href="/Proeve-van-Bekwaamheid/Bizander/public/css/master.css">
     <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
     <title>Bizander</title>
 </head>
@@ -16,7 +16,7 @@
                 <a href="" class="logo"><img src="image/Logo_Bizander_Witlinks.svg" alt="Logo"></a>
                     <div id="menu" class="over">
                         <ul class="links">
-                            <a href="/Bizander/public"><li>Home</li></a>
+                            <a href="/Proeve-van-Bekwaamheid/Bizander/public"><li>Home</li></a>
                             <a href="product-overview"><li>Producten</li></a>
                             <a href="over"><li>Over</li></a>
                             <a href="contact"><li>Contact</li></a>

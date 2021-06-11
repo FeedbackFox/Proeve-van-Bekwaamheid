@@ -16,7 +16,7 @@
                 <a href="" class="logo"><img src="image/Logo_Bizander_Witlinks.svg" alt="Logo"></a>
                     <div id="menu">
                         <ul class="links">
-                            <a href="/Bizander/public"><li>Home</li></a>
+                            <a href="/Proeve-van-Bekwaamheid/Bizander/public"><li>Home</li></a>
                             <a href="product-overview"><li>Producten</li></a>
                             <a href="over"><li>Over</li></a>
                             <a href="contact"><li>Contact</li></a>

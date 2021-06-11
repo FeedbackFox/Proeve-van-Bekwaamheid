@@ -12,12 +12,15 @@
         </div>
     </div>
     
-    <div id="input" class="input-wrapper shell">
-        <p>Als u meer informatie zoals de prijs, bestellen of andere vragen heeft over deze tas. 
-           Dan kunt u hieronder uw gegevens met uw vraag invullen en dan neemt de maker zo snel mogelijk contact met u op.</p>
-        <input type="text" placeholder="Naam..." class="input input-name">
-        <input type="mail" placeholder="Email..." class="input input-mail">
-        <textarea name="bericht" id="message" cols="30" rows="10" placeholder="Bericht..." class="input input-text"></textarea>
-        <input type="button" value="Vraag Informatie aan" class="input-btn btn-informatie">
-    </div>
+    <form method="POST" name="productForm" action="../../private/models/emailProduct.php">
+        <div id="input" class="input-wrapper shell">
+            <p>Als u meer informatie zoals de prijs, bestellen of andere vragen heeft over deze tas. 
+               Dan kunt u hieronder uw gegevens met uw vraag invullen en dan neemt de maker zo snel mogelijk contact met u op.</p>
+                <input type="hidden" placeholder="Betreft..."  id="subject" name="subject" class="input input-name" value="<?php echo $project['naam'] ?>">
+                <input type="text"   placeholder="Naam..."  id="name"    name="name"    class="input input-name">
+                <input type="mail"   placeholder="Email..." id="email"   name="email"   class="input input-mail">
+                <textarea name="message" id="message" cols="30" rows="10" placeholder="Bericht..." class="input input-text"></textarea>
+                <input type="submit" name="send" value="Vraag Informatie aan" class="input-btn btn-informatie <?= $valid_class_name ?? ""?>">
+        </div>
+    </form>
 </div>
