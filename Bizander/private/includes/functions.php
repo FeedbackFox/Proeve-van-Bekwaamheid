@@ -21,4 +21,27 @@ function dbConnect()
         echo 'Fout bij maken van database verbinding: ' . $e->getMessage();
     }
 
+    Class SQL
+    {
+    static function query($query)
+        {
+            $result = $sql->query($query);
+            $sql->close();
+            $resultArray = [];
+            while($row = $result->fetch_row()) 
+            {
+                $resultArray[] = $row;
+            }
+
+            if (count($resultArray) > 0) 
+            {
+                return $resultArray;
+            } 
+            else 
+            {
+                return null;
+            }
+            
+        }
+    }
 }

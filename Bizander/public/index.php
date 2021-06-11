@@ -53,6 +53,7 @@ $router->map( 'GET', '/over', 'OverController#overpage', 'Over-page');
 $router->map( 'GET', '/product-overview', 'ProductController#productpage', 'Product-page' );
 $router->map( 'GET', '/product/[a:id]', 'ProductController#displayShell', 'single-product');
 $router->map( 'GET', '/contact', 'ContactController#contactpage', 'contact-page' );
+$router->map( 'GET', '/private/admin/upload', 'UploadController#uploadpage', 'upload-page');
 
 // Daarna vragen we $router of de huidige URL getmatcht kan worden.
 $match = $router->match();

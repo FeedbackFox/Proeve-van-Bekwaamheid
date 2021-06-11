@@ -30,6 +30,10 @@
                     <a href="https://www.facebook.com/bizander/" target="_blank"><img src="image/Facebook.svg" alt="Facebook link"></a>
                             <a href="https://www.instagram.com/bizander.nl/" target="_blank"><img src="image/Instagram.svg" alt="Instagram link"></a>
                     </div>
+                    <div class="homepage-info">
+                        <h1>Vind voor u de beste tas</h1>
+                        <a href="product-overview" class="portfolio-link"><button class="portfolio-btn">Portfolio</button></a>
+                    </div>
                     <div class="homepage-logo">
                         <a href="#home" class="logo-desktop"><img src="image/Logo_Bizander_Witlinks.svg" alt="Logo"></a>
                     </div>

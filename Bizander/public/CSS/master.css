@@ -210,6 +210,13 @@ body {
 }
 
 
+/* Homepage Content styling */
+
+.homepage-info {
+    color: #fff;
+}
+
+
 /* Slideshow styling */
 
 .homepage-content {
@@ -468,6 +475,44 @@ img.img-responsive.image.tas-image {
 }
 
 
+/* Input styling */
+
+.input {
+    background-color: #000;
+    border: 1px solid #fff;
+    color: #fff;
+    padding: 15px 10px;
+    margin: 10px 0;
+}
+
+::placeholder {
+    color: #fff;
+    opacity: 1;
+}
+
+input.input-btn {
+    width: 33%;
+    padding: 10px 15px;
+    background: #fff;
+    color: #000;
+    font-weight: 800;
+    margin-top: 15px;
+}
+
+input.input-btn:hover {
+    background: #000;
+    color: #fff;
+    border: 1px solid #fff;
+}
+
+.option {
+    color: #fff;
+}
+
+
+/* Custom Scrollbar */
+
+
 /* Desktop view */
 
 @media only screen and (min-width: 1200px) {
@@ -548,7 +593,7 @@ img.img-responsive.image.tas-image {
         margin: 0 0 0 100px;
     }
     .topnav .homepage-logo a.logo-desktop img {
-        margin: 650px 0 0 115px;
+        margin: 300px 0 0 115px;
         height: 110px;
         width: 520px;
     }
@@ -604,6 +649,23 @@ img.img-responsive.image.tas-image {
         display: block;
         margin: 25px 0 0 450px;
     }
+    /* Content styling */
+    .homepage-info {
+        margin: 25em 0 0 8em;
+    }
+    .topnav a.portfolio-link {
+        padding: 0;
+        margin: 0;
+    }
+    .topnav a.portfolio-link button.portfolio-btn {
+        padding: 5px 20px;
+    }
+    .topnav a.portfolio-link button.portfolio-btn:hover {
+        padding: 5px 20px;
+        color: #fff;
+        background: #000;
+        border: 1px solid #fff;
+    }
     /* cover image */
     .homepage-cover img.cover-image {
         height: 100vh;
@@ -615,7 +677,7 @@ img.img-responsive.image.tas-image {
     div.over-wrapper {
         display: flex;
         flex-direction: row;
-        width: 400vw;
+        width: 210vw;
         transform: rotate(90deg) translateY(-100vh);
         transform-origin: top left;
     }
@@ -633,13 +695,33 @@ img.img-responsive.image.tas-image {
      ::-webkit-scrollbar {
         display: none;
     }
+    /* width */
+     ::-webkit-scrollbar {
+        height: 4px;
+        width: 10px;
+    }
+    /* Track */
+     ::-webkit-scrollbar-track {
+        background: #f1f1f1;
+    }
+    /* Handle */
+     ::-webkit-scrollbar-thumb:horizontal {
+        background: #fff;
+    }
+    /* Handle on hover */
+     ::-webkit-scrollbar-thumb:hover {
+        background: #555;
+    }
     div.image-desktop {
         margin-top: 200px;
         margin-left: 125px;
-        width: 400vw;
+        width: 210vw;
     }
     img.desktop.image {
         display: block;
+    }
+    div.image-mobile {
+        display: none;
     }
     /* Contact-page Styling */
     .topnav.contact .socials {
@@ -714,7 +796,7 @@ img.img-responsive.image.tas-image {
         left: 0;
     }
     .input-wrapper .logo {
-        margin-top: 35em;
+        margin-top: 25em;
     }
     .product-tas {
         width: 25%;
@@ -739,11 +821,14 @@ img.img-responsive.image.tas-image {
         position: relative;
     }
     .shellwrapper {
+        position: fixed;
         display: flex;
         flex-direction: column;
         justify-content: center;
         align-items: center;
         width: 50%;
+        margin-top: 5em;
+        right: 0;
     }
     .subwrapper.shell {
         width: 75%;
@@ -751,6 +836,7 @@ img.img-responsive.image.tas-image {
         margin: 20px 0;
     }
     .shell__pic {
+        position: fixed;
         width: 50%;
     }
     .desc__hideShow span {

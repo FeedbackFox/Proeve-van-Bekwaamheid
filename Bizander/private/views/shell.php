@@ -15,9 +15,9 @@
     <div id="input" class="input-wrapper shell">
         <p>Als u meer informatie zoals de prijs, bestellen of andere vragen heeft over deze tas. 
            Dan kunt u hieronder uw gegevens met uw vraag invullen en dan neemt de maker zo snel mogelijk contact met u op.</p>
-        <input type="text" placeholder="Naam...">
-        <input type="mail" placeholder="Email...">
-        <textarea name="bericht" id="message" cols="30" rows="10" placeholder="Bericht..."></textarea>
-        <input type="button" value="Vraag Informatie aan" class="btn-informatie">
+        <input type="text" placeholder="Naam..." class="input input-name">
+        <input type="mail" placeholder="Email..." class="input input-mail">
+        <textarea name="bericht" id="message" cols="30" rows="10" placeholder="Bericht..." class="input input-text"></textarea>
+        <input type="button" value="Vraag Informatie aan" class="input-btn btn-informatie">
     </div>
 </div>
